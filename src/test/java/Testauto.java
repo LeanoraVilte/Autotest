@@ -24,6 +24,8 @@ public class Testauto {
     {
         open("https://demoqa.com/automation-practice-form");
         $("[id = firstName]").setValue("Kristina");
+        $("[id = lastName]").setValue("Vosk");
+        $("[id = userEmail]").setValue("tina@mail.ru");
 
 
     }

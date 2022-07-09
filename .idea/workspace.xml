@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="454a2c5d-d2d3-4d21-a72e-8514136c6dba" name="Changes" comment="re1">
+    <list default="true" id="454a2c5d-d2d3-4d21-a72e-8514136c6dba" name="Changes" comment="re2">
       <change beforePath="$PROJECT_DIR$/src/test/java/Testauto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testauto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657382291911</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="re2">
+      <created>1657382663242</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657382663242</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,6 +251,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="re" />
     <MESSAGE value="re1" />
-    <option name="LAST_COMMIT_MESSAGE" value="re1" />
+    <MESSAGE value="re2" />
+    <option name="LAST_COMMIT_MESSAGE" value="re2" />
   </component>
 </project>
