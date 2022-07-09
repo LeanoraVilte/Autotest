@@ -19,5 +19,12 @@ public class Testauto {
             sleep(100);
     }
 
+    @Test
+    void DemoQatest()
+    {
+        open("https://demoqa.com/automation-practice-form");
+        $("[id = firstName]").setValue("Kristina");
 
+
+    }
 }
