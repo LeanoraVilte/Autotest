@@ -31,39 +31,4 @@ public class TestAuto {
             sleep(100);
     }
 
-    @Test
-    void DemoQatest()
-    {
-
-        String hobby = "Reading";
-        String city = "Belarus";
-        String state = "Bel";
-
-        open("/automation-practice-form");
-        executeJavaScript("$('footer').remove()");
-        executeJavaScript("$('#fixedban').remove()");
-        $("[id = firstName]").setValue("Kristina");
-        $("[id = lastName]").setValue("Vosk");
-        $("[id = userEmail]").setValue("tina@mail.ru");
-        $("[id = gender-radio-2]").doubleClick();
-        $("[id = userNumber]").setValue("1234567890");
-        $("[id = currentAddress]").setValue("New town, 44");
-        $("[id = dateOfBirthInput]").clear();
-        $("#dateOfBirthInput").click();
-        $(".react-datepicker__month-select").selectOption("May");
-        $(".react-datepicker__year-select").selectOption("1988");
-        $(".react-datepicker__day--018:not(.react-datepicker__day--outside-month)").click();
-        $("#subjectsInput").setValue("Games").pressEnter();
-        $("#hobbiesWrapper").setValue("Reading").click();
-        $("#react-select-3-input").setValue(state).pressEnter();
-        $("#react-select-4-input").setValue(city).pressEnter();
-        // $("input#uploadPicture").uploadFile(new File("src/test/resources/123.jpg"));
-        $("input#uploadPicture").uploadFromClasspath("123.jpg");
-        //  $("#uploadPicture").uploadFromClasspath(imgPath);  альтернатива,
-        //  задать переменную String imgPath = "img/Pushkin.jpg";
-        $("#submit").click();
-        //$("[id = hobbies-checkbox-2]").doubleClick();
-        sleep(6000);
-
-    }
 }
