@@ -3,6 +3,8 @@ import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -17,16 +19,16 @@ public class DemoQA {
 
     @Test
     void  Test1 () {
-        String firstName = "Aren";
-        String lastName = "Karapetyan";
-        String email = "romashka@mail.ru";
-        String tel = "8800200060";
+        String firstName = "Kris";
+        String lastName = "Vask";
+        String email = "Leate@mail.ru";
+        String tel = "9874563210";
         String subjectsInput = "Hindi";
-        String gender = "Male";
-        String hobby = "Reading";
-        String currentAddress = "Eto to4no Java?";
-        String state = "Uttar Pradesh";
-        String city = "Merrut";
+        String gender = "Female";
+        String hobby = "Sports";
+        String currentAddress = "NewWorld";
+        String state = "NCR";
+        String city = "Delhi";
         String imgPath = "123.jpg";
         // String dataBirth
 
@@ -53,7 +55,7 @@ public class DemoQA {
         $("#currentAddress").setValue(currentAddress);
         $("#react-select-3-input").setValue(state).pressEnter();
         $("#react-select-4-input").setValue(city).pressEnter();
-        // $("input#uploadPicture").uploadFile(new File("src/test/resources/123.jpg"));
+        $("input#uploadPicture").uploadFile(new File("src/test/resources/123.jpg"));
         //$("input#uploadPicture").uploadFromClasspath("123.jpg");
         //$("#uploadPicture").uploadFromClasspath(imgPath); // альтернатива,
         //  задать переменную String imgPath = "img/Pushkin.jpg";
