@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
+import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -28,11 +29,27 @@ public class Pomnyu {
     {
         open("https://demo.pomnyu.ru/");
         $(By.linkText("Слова соболезнования")).click();
-        $().shouldHave (Condition.text("Сослуживца"));
-        $().shouldHave (Condition.text("Сестры"));
-        $().shouldHave (Condition.text("Мужа"));
-        $().shouldHave (Condition.text("Отца"));
-        $().shouldHave (Condition.text("Матери"));
+        $(byText("Жены")).exists();
+        $(byText("Сослуживца")).exists();
+        $(byText("Брата")).exists();
+        $(byText("Дяди")).exists();
+        $(byText("Учителя")).exists();
+        $(byText("Мужа")).exists();
+        $(byText("Родных")).exists();
+        $(byText("Внучки")).exists();
+        $(byText("Дедушки")).exists();
+        $(byText("Бабушки")).exists();
+        $(byText("Сестры")).exists();
+        $(byText("Внука")).exists();
+        $(byText("Брата")).exists();
+        $(byText("Подруги")).exists();
+        $(byText("Сына")).exists();
+        $(byText("Дочери")).exists();
+        $(byText("Детей")).exists();
+        $(byText("Коллеги")).exists();
+        $(byText("Друга")).exists();
+        $(byText("Мамы")).exists();
+        $(byText("Папы")).exists();
 
     }
 
