@@ -18,7 +18,7 @@ public class DemoQA {
     }
 
     @Test
-    void  Test1 () {
+    void  NewTest () {
         String firstName = "Kris";
         String lastName = "Vask";
         String email = "Leate@mail.ru";

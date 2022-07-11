@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="454a2c5d-d2d3-4d21-a72e-8514136c6dba" name="Changes" comment="re14">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/123.jpg" afterDir="false" />
+    <list default="true" id="454a2c5d-d2d3-4d21-a72e-8514136c6dba" name="Changes" comment="re15">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pomnyu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/TestAuto.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/TestAuto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DemoQA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DemoQA.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,8 +71,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.DemoQA.Test1">
-    <configuration name="Autotest [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="JUnit.Pomnyu.CreateRemememberPage">
+    <configuration name="Autotest [compileTestJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -73,7 +83,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value="compileTestJava" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -102,20 +112,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAuto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Pomnyu.CreateRemememberPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Autotest.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestAuto" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="Pomnyu" />
+      <option name="METHOD_NAME" value="CreateRemememberPage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAuto.DemoQatest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Pomnyu.OpenPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Autotest.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestAuto" />
-      <option name="METHOD_NAME" value="DemoQatest" />
+      <option name="MAIN_CLASS_NAME" value="Pomnyu" />
+      <option name="METHOD_NAME" value="OpenPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Pomnyu.CreateRemememberPage" />
+        <item itemvalue="JUnit.Pomnyu.OpenPage" />
+        <item itemvalue="Gradle.Autotest [compileTestJava]" />
         <item itemvalue="JUnit.DemoQA.Test1" />
         <item itemvalue="JUnit.DemoQA" />
-        <item itemvalue="JUnit.TestAuto.DemoQatest" />
-        <item itemvalue="JUnit.TestAuto" />
-        <item itemvalue="Gradle.Autotest [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657525377793</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="re15">
+      <created>1657526274469</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1657526274469</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,6 +320,18 @@
     <MESSAGE value="re12" />
     <MESSAGE value="re13" />
     <MESSAGE value="re14" />
-    <option name="LAST_COMMIT_MESSAGE" value="re14" />
+    <MESSAGE value="re15" />
+    <option name="LAST_COMMIT_MESSAGE" value="re15" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Pomnyu.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
