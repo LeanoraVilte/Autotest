@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.files.DownloadActions.click;
+import static org.openqa.selenium.By.linkText;
 
 public class Pomnyu {
 
@@ -25,10 +27,10 @@ public class Pomnyu {
     }
 
     @Test
-    void Words()
+    void Words()//проверяем наличие всех категорий слов о соболезновании
     {
         open("https://demo.pomnyu.ru/");
-        $(By.linkText("Слова соболезнования")).click();
+        $(linkText("Слова соболезнования")).click();
         $(byText("Жены")).exists();
         $(byText("Сослуживца")).exists();
         $(byText("Брата")).exists();
@@ -51,6 +53,21 @@ public class Pomnyu {
         $(byText("Мамы")).exists();
         $(byText("Папы")).exists();
 
+    }
+
+   @Test
+   void CreatePage()
+    {
+      String login = "admin@ya.ru";
+      String password = "222333";
+
+      open("https://demo.pomnyu.ru/");
+      $(linkText("Войти")).click();
+      $("[id = emailLogin]").setValue(login);
+      $("[id = passwordLogin]").setValue(password);
+      $("[id = sub_login]").click();
+      $(byPartialLinkText("Кабинет")).click();
+      $(byPartialLinkText("Добавить страницу")).click();//дальше пятисотит
     }
 
 }
