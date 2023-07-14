@@ -18,10 +18,11 @@ compileTestJava {
 
 
 dependencies {
-    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    implementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+    implementation 'commons-math:commons-math:1.2'
     testImplementation (
-            'com.codeborne:selenide:6.7.4',
-            "org.junit.jupiter:junit-jupiter:5.8.2")
+            'com.codeborne:selenide:6.15.0',
+            "org.junit.jupiter:junit-jupiter:5.9.2")
 }
 
 test {

@@ -1,5 +1,4 @@
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -78,4 +77,47 @@ public class DemoQA {
         //   $("#closeLargeModal").click();
 
     }
+
+    @Test
+    void searchT() {
+        open("https://www.google.ru/");
+
+        $("[name = q]").click();
+        $("[name = q]").setValue("osipinfo").pressEnter();
+        $("[id=search]").shouldHave(text("Осиповичи Инфо"));
+    }
+
+    @Test
+    void newLife() {
+        open("/alerts");
+        $("[id=alertButton]").click();
+        $$("html span").findBy(text("OK")).doubleClick();
+
+    }
+
+    @Test
+    void newLife1() {
+        open("/alerts");
+        $("[id=timerAlertButton]").click();
+        $$("html span").findBy(text("OK")).doubleClick();
+    }
+
+    @Test
+    void newLife2() {
+        open("/alerts");
+        $("[id=confirmButton]").click();
+        $$("html span").findBy(text("Ok")).doubleClick();
+        $("[id=confirmResult]").shouldHave(text("You selected Ok"));
+    }
+
+    @Test
+    void Lesson() {
+        open("/buttons");
+        $$("[type = button]").findBy(text("Click Me")).doubleClick();
+        $("[id = doubleClickMessage]").shouldHave(text("You have done a double click"));
+        //You have done a double click
+
+    }
+
+
 }
